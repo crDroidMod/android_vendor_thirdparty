@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
     <privapp-permissions package="com.oasisfeng.greenify">
+        <permission name="android.permission.FOREGROUND_SERVICE" />
         <permission name="android.permission.INTERNET" />
         <permission name="android.permission.ACCESS_NETWORK_STATE" />
         <permission name="android.permission.GET_TASKS" />
+        <permission name="android.permission.REAL_GET_TASKS" />
         <permission name="android.permission.PACKAGE_USAGE_STATS" />
         <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
         <permission name="android.permission.GET_ACCOUNTS" />
