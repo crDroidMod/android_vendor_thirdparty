@@ -71,6 +71,17 @@ LOCAL_DEX_PREOPT := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := Lawnchair
+LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := platform
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_DEX_PREOPT := true
+LOCAL_OVERRIDES_PACKAGES := Home Launcher2 Launcher3 Launcher3QuickStep Launcher3QuickStepGo
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := SimpleGalleryPro
 LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
