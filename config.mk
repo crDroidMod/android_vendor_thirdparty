@@ -14,13 +14,13 @@ PRODUCT_PACKAGES += \
     Greenify \
     Lawnchair \
     Lawnfeed \
-    SimpleGalleryPro
+    SimpleGallery
 
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-greenify.xml:system/etc/permissions/privapp-permissions-greenify.xml \
     $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
     $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-lawnfeed.xml:system/etc/permissions/privapp-permissions-lawnfeed.xml \
-    $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-simplegallerypro.xml:system/etc/permissions/privapp-permissions-simplegallerypro.xml
+    $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-simplegallery.xml:system/etc/permissions/privapp-permissions-simplegallery.xml
 
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/etc/permissions/lawnchair-hiddenapi-package-whitelist.xml:system/etc/permissions/lawnchair-hiddenapi-package-whitelist.xml

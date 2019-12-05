@@ -92,7 +92,7 @@ LOCAL_DEX_PREOPT := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := SimpleGalleryPro
+LOCAL_MODULE := SimpleGallery
 LOCAL_SRC_FILES := priv-app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
