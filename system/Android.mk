@@ -1,8 +1,4 @@
-include $(call all-subdir-makefiles)
-
 LOCAL_PATH := $(call my-dir)
-
-# Third-party Packages
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := BaiduInputMi

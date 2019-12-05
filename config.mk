@@ -1,6 +1,7 @@
-VENDOR_PATH := vendor/thirdparty
+LOCAL_PATH := $(call my-dir)
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
-# Third-party Packages
+VENDOR_PATH := vendor/thirdparty
 
 PRODUCT_PACKAGES += \
     BaiduInputMi \
@@ -17,20 +18,13 @@ PRODUCT_PACKAGES += \
     SimpleGallery
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-greenify.xml:system/etc/permissions/privapp-permissions-greenify.xml \
-    $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
-    $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-lawnfeed.xml:system/etc/permissions/privapp-permissions-lawnfeed.xml \
-    $(VENDOR_PATH)/system/etc/permissions/privapp-permissions-simplegallery.xml:system/etc/permissions/privapp-permissions-simplegallery.xml
+    $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/etc/permissions,system/etc/permissions)
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/permissions/lawnchair-hiddenapi-package-whitelist.xml:system/etc/permissions/lawnchair-hiddenapi-package-whitelist.xml
+    $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/bin,system/bin)
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/bin/adb:system/bin/adb \
-    $(VENDOR_PATH)/system/bin/adb.bin:system/bin/adb.bin \
-    $(VENDOR_PATH)/system/bin/busybox:system/bin/busybox \
-    $(VENDOR_PATH)/system/bin/fastboot:system/bin/fastboot \
-    $(VENDOR_PATH)/system/xbin/busybox:system/xbin/busybox
+    $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/xbin,system/xbin)
 
 TARGET_BOOTANIMATION_HALF_RES := true
 USE_REDUCED_CJK_FONT_WEIGHTS := true
