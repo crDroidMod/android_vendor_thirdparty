@@ -5,7 +5,6 @@ VENDOR_PATH := vendor/thirdparty
 
 PRODUCT_PACKAGES += \
     BaiduInputMi \
-    EXKernelManager \
     Phonograph \
     RootExplorer \
     Substratum \
