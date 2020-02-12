@@ -7,7 +7,6 @@ PRODUCT_PACKAGES += \
     BaiduInputMi \
     Phonograph \
     RootExplorer \
-    Substratum \
     Via
 
 PRODUCT_PACKAGES += \
