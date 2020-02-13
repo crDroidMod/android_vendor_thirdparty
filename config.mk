@@ -22,6 +22,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/xbin,system/xbin)
 
-TARGET_BOOTANIMATION_HALF_RES := true
 USE_REDUCED_CJK_FONT_WEIGHTS := true
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
