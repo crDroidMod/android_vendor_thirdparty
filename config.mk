@@ -21,5 +21,3 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(VENDOR_PATH)/system/xbin,system/xbin)
-
-PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
