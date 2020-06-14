@@ -3,7 +3,8 @@
     <privapp-permissions package="com.simplemobiletools.gallery.pro">
         <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <permission name="android.permission.SET_WALLPAPER" />
-        <permission name="android.permission.USE_FINGERPRINT" />
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
         <permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <permission name="android.permission.USE_FINGERPRINT" />
     </privapp-permissions>
 </permissions>
